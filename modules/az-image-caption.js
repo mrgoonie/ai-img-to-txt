@@ -1,5 +1,7 @@
 import axios from "axios";
-import { readFileSync } from "fs";
+import dotenvFlow from 'dotenv-flow';
+
+dotenvFlow.config();
 
 const AZURE_ENDPOINT = 'https://image-caption-test.cognitiveservices.azure.com/computervision/imageanalysis:analyze';  // e.g. "https://your_region.api.cognitive.microsoft.com/vision/v3.0/analyze"
 const AZURE_KEY = process.env.AZURE_KEY;
