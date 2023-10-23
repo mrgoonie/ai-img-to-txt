@@ -1,15 +1,34 @@
 # ai-img-to-txt
 
+Use computer vision to analyze an input image, then write captions.
+
+## Install
+
 To install dependencies:
 
 ```bash
-bun install
+npm install
 ```
 
-To run:
+## API KEY
 
-```bash
-bun run index.ts
-```
+- HuggingFace Access Token, get it from: https://huggingface.co/settings/tokens
+- Azure Cognitive Vision API, get it from: https://portal.azure.com/
 
-This project was created using `bun init` in bun v1.0.7. [Bun](https://bun.sh) is a fast all-in-one JavaScript runtime.
+## To run:
+
+- For HuggingFace & Transformer.js:
+
+    ```bash
+    npm run index.js
+    ```
+
+- For Azure Cognitive Vision API:
+
+    ```
+    npm run modules/az-image-caption.js
+    ```
+
+## Credits
+
+- @mrgoonie <hi@mrgoon.info>
